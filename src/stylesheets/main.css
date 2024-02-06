@@ -1,0 +1,191 @@
+/* Small */
+body {
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+img {
+    height: 3rem;
+    width: 100%;
+    visibility:hidden;
+}
+
+.container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    grid-template-areas: 
+    "yellow1 yellow1"
+    "yellow1 yellow1"
+    "blue1 blue1"
+    "blue2 blue2"
+    "blue3 blue3"
+    "blue4 blue4"
+    "blue5 blue5"
+    "yellow2 yellow2"
+    "blue6 yellow3"
+    "blue7 yellow3"
+    "blue8 yellow3"
+    "blue9 yellow3"
+    "yellow4 yellow4";
+}
+
+
+/* Arranged by order off appearance on webpage */
+.yellow1 {
+    grid-area: yellow1;
+    background-color: yellow;
+    height: 4rem;
+}
+.blue1 {
+    grid-area: blue1;
+    background-color: blue;
+    height: 2rem;
+}
+.blue2 {
+    grid-area: blue2;
+    background-color: blue;
+    height: 2rem;
+}
+.blue3 {
+    grid-area: blue3;
+    background-color: blue;
+    height: 2rem;
+}
+.blue4 {
+    grid-area: blue4;
+    background-color: blue;
+    height: 2rem;
+}
+.blue5 {
+    grid-area: blue5;
+    background-color: blue;
+    height: 2rem;
+}
+.yellow2 {
+    grid-area: yellow2;
+    background-color: yellow;
+    height: 16rem;
+}
+.blue6 {
+    grid-area: blue6;
+    background-color: blue;
+    height: 4rem;
+}
+.blue7 {
+    grid-area: blue7;
+    background-color: blue;
+    height: 4rem;
+}
+.blue8 {
+    grid-area: blue8;
+    background-color: blue;
+    height: 4rem;
+}
+.blue9 {
+    grid-area: blue9;
+    background-color: blue;
+    height: 4rem;
+}
+.yellow3 {
+    grid-area: yellow3;
+    background-color: yellow;
+}
+.yellow4 {
+    grid-area: yellow4;
+    background-color: yellow;
+}
+
+/* Medium */
+@media (min-width: 501px) {
+    .container {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    
+        grid-template-areas: 
+        "yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1"
+        "blue1 blue1 blue2 blue2 blue3 blue3 blue4 blue4 blue5 blue5"
+        "yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2"
+        "blue6 blue6 blue6 blue7 blue7 blue7 yellow3 yellow3 yellow3 yellow3"
+        "blue8 blue8 blue8 blue9 blue9 blue9 yellow3 yellow3 yellow3 yellow3"
+        "yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4";
+    }
+
+    /* Arranged by order off appearance on webpage */
+    .yellow1 {
+        height: 5rem;
+    }
+    .blue1, .blue2, .blue3, .blue4, .blue5{
+        height: 3rem;
+    }
+    .yellow2 {
+        height: 25.5rem;
+    }
+    .blue6, .blue7, .blue8, .blue9 {
+        height: 5rem;
+    }
+    .yellow4 {
+        height: 5rem;
+    }
+    
+}
+
+/* Large */
+@media (min-width: 801px) {
+    .container {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    
+        grid-template-areas: 
+        "yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1 yellow1"
+
+        "blue1 blue1 blue1 blue1 blue1 blue2 blue2 blue2 blue2 blue2 blue3 blue3 blue3 blue3 blue3 blue4 blue4 blue4 blue4 blue4 blue5 blue5 blue5 blue5 blue5"
+
+
+        "yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3 yellow3"
+
+        "yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 blue6 blue6 blue6 blue6 blue6 blue6 blue7 blue7 blue7 blue7 blue7 blue7"
+
+        "yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 yellow2 blue8 blue8 blue8 blue8 blue8 blue8 blue9 blue9 blue9 blue9 blue9 blue9"
+
+        "yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4 yellow4";
+    }
+
+    /* Arranged by order off appearance on webpage */
+    .yellow1 {
+        margin: .5rem;
+    }
+    .blue1 {
+        margin: 1rem 1rem 1rem .5rem;
+        height: 3rem;
+    }
+    .blue2, .blue3, .blue4{
+        margin: 1rem;
+        height: 3rem;
+    }
+    .blue5 {
+        margin: 1rem .5rem 1rem 1rem;
+        height: 3rem;
+    }
+    .yellow2 {
+        margin: .5rem;
+        height: 25.5rem;
+    }
+    .blue6, .blue7, .blue8, .blue9 {
+        margin: .5rem;
+        height: 5rem;
+    }
+    .yellow3 {
+        height: 12rem;
+        margin: .5rem;
+    }
+    .yellow4 {
+        margin: .5rem;
+    }
+
+}
